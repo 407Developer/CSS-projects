@@ -1,0 +1,56 @@
+/* Basic CSS Snippet */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+}
+.color-box {
+    min-width: 107px;
+    height: 20px;
+    background: #3d00e4;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch-text {
+    animation: linear 2.8s infinite linear;
+    /* display: none; */
+}
+
+.switch-text:nth-child(2){
+    animation-delay: 0.9s
+}
+
+.switch-text:nth-child(3){
+    animation-delay: 1.8s;
+}
+
+@keyframes linear {
+    30%, 100% {
+        display: none;
+    }
+    0% {
+        display: block;
+    }
+}
